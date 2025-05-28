@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.post("/data", (req, res) => {
+app.get("/api/data", (req, res) => {
   const data = req.body;
   res.json({
     message: "Data received successfully",
